@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imgs/coinverter-logo.png" type="image/x-icon">
+  <title>Coinverter - Historial</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+</head>
+
+<body>
+  <header class="text-center">
+    
+    <h5 class="historial">
+      <ul class="navbar">
+        <li class="nav-item"><a href="index.html">Inicio</a></li>
+        <li class="nav-item"><a href="historial.html">Historial de conversiones</a></li>
+      </ul>
+    </h5>
+  </header>
+
+
+  <section class="sect2">
+
+
+    <h4 class="historial col-2"><a href="index.html">Volver</a></h4>
+    <h3>Historial de conversiones</h3>
+
+    <div class="tabla-container" id="plantilla">
+      <table class="table ">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">De</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">A</th>
+            <th scope="col">Resultado</th>
+            <th scope="col">Hora de cambio</th>
+          </tr>
+        </thead>
+        <tbody id="plantillaCont">
+
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+
+  <footer class="footer mt-4">
+    <ul>
+      
+      <li>Conversor de divisas/ nicolas gomez</li>
+      <li><a href="index.html">Inicio</a> </li>
+      <li><a href="historial.html">Historial</a> </li>
+    </ul>
+  </footer>
+
+
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+  <!-- functions -->
+  <script src="js/functions/conversor/swap.js"></script>
+  <script src="js/functions/conversor/convertir.js"></script>
+
+  <script src="js/functions/enterBoton.js"></script>
+  <script src="js/functions/numberInput.js"></script>
+  <script src="js/functions/logoAnimation.js"></script>
+
+  <script src="js/functions/storage/guardarStorage.js"></script>
+  <script src="js/functions/storage/mostrarStorage.js"></script>
+
+  <script src="js/main.js"></script>
+
+
+  <script>$(document).ready(function () { mostrarStorage(); });</script>
+
+</body>
+
+</html>
